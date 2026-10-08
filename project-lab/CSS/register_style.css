@@ -1,0 +1,147 @@
+html, body {
+  background: #1f2b38;
+  color: #e8edf2;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+/* suprascrie regulile generale (formularul e lung, nu incape in 100vh) */
+body {
+  display: block;
+  height: auto;
+}
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.card {
+  width: 100%;
+  max-width: 560px;
+  background: #2d3b4b;
+  padding: 24px 28px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+  text-align: center;
+  color: #f4c542;
+  margin: 0 0 20px;
+  font-size: 1.6rem;
+}
+
+.row {
+  margin-bottom: 14px;
+  text-align: left;
+}
+
+.row label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #44566b;
+  background: #223040;
+  color: #e8edf2;
+  font-size: 0.95rem;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+input::placeholder, textarea::placeholder { color: #7e8fa3; }
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #f4c542;
+  box-shadow: 0 0 0 3px rgba(244, 197, 66, 0.25);
+}
+
+/* radio / checkbox nu trebuie sa fie pe toata latimea */
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  accent-color: #f4c542;
+}
+
+.two-col {
+  display: flex;
+  gap: 12px;
+}
+
+.two-col > div {
+  flex: 1;
+}
+
+.row .option {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 16px 0 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.checkbox-grid {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.checkbox-grid .option { margin-right: 6px; }
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+
+.btn {
+  padding: 10px 22px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.btn.primary {
+  background: #f4c542;
+  color: #1f2b38;
+}
+.btn.primary:hover { background: #ffd966; }
+
+.btn.ghost {
+  background: transparent;
+  color: #cfd8e3;
+  border-color: #6b7d92;
+}
+.btn.ghost:hover { border-color: #cfd8e3; }
+
+.login-link {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #aab6c4;
+}
+
+.login-link a {
+  color: #f4c542;
+  font-weight: bold;
+  text-decoration: none;
+}
+.login-link a:hover { text-decoration: underline; }
+
+@media (max-width: 500px) {
+  .card { padding: 18px 16px; }
+  .two-col { flex-direction: column; gap: 14px; }
+}

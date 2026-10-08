@@ -1,0 +1,105 @@
+body {
+  background-color: #29343f;
+}
+
+.login-container {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  height: 500px;
+  min-height: 400px;
+}
+
+.login-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.login-image img {
+  width: 70%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.separator {
+  width: 5px;
+  background-color: #ffffff;
+}
+
+.login-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 20px;
+  padding: 40px;
+  color: #ffffff;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.login-form input {
+  padding: 12px;
+  margin-bottom: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: 1px solid blue;
+}
+
+input:hover {
+  transform: scale(1.02);
+  transition: all .1s ease-in-out;
+}
+
+.login-form button {
+  padding: 15px;
+  background-color: #3471B8;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #024A76;
+}
+
+.register-text {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #cfd8e3;
+}
+
+.register-text a {
+  color: #3471B8;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.register-text a:hover {
+  color: #024A76;
+}
+
+/* Responsive: pe ecrane mici imaginea trece deasupra formularului */
+@media (max-width: 700px) {
+  .login-container { flex-direction: column; height: auto; }
+  .login-image { height: 150px; }
+  .login-image img { width: 50%; }
+  .separator { width: 100%; height: 3px; }
+  .login-form { margin-left: 0; padding: 24px; }
+}
