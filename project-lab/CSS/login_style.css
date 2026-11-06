@@ -95,7 +95,6 @@ input:hover {
   color: #024A76;
 }
 
-/* Responsive: pe ecrane mici imaginea trece deasupra formularului */
 @media (max-width: 700px) {
   .login-container { flex-direction: column; height: auto; }
   .login-image { height: 150px; }

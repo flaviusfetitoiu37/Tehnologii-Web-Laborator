@@ -1,0 +1,35 @@
+main {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+main h2 {
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-view {
+  width: 800px;
+  max-width: 100%;
+  height: 450px;
+  overflow: hidden;
+  border: 4px solid #29343f;
+  border-radius: 12px;
+}
+
+.carousel-view img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+@media (max-width: 750px) {
+  .carousel-view { height: 250px; }
+}
